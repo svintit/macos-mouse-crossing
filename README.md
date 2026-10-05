@@ -4,6 +4,22 @@ Keep the pointer aligned when crossing between monitors with different sizes, re
 
 macOS uses logical screen coordinates to decide where the pointer enters the next display. Those coordinates do not always match the physical screen edges. This kit maps the crossing position using calibrated physical display rectangles.
 
+## Before and after
+
+Both GIFs show the same three-screen setup with an enlarged pointer. Previews use 15 fps. Use the full-quality video links below when comparing motion smoothness.
+
+**Before: mapping disabled**
+
+![Before: pointer crossing with normal macOS mapping](https://github.com/user-attachments/assets/24db0956-3972-4f6d-bf91-552d258bfb07)
+
+Full-quality video: [before recording](https://github.com/user-attachments/assets/a773c225-37ee-4e01-a595-493502bab3ee).
+
+**After: mapping enabled**
+
+![After: pointer crossing with calibrated mapping](https://github.com/user-attachments/assets/d76fb58d-d5c2-4c91-9f5a-260509276c39)
+
+Full-quality video: [after recording](https://github.com/user-attachments/assets/f225d083-f002-4820-85b8-4016dc5d04f1).
+
 ## What it does
 
 - Matches the crossing height for left/right neighbors and the crossing position for above/below neighbors.
